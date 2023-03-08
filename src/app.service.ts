@@ -1,11 +1,12 @@
 import { HttpService } from '@nestjs/axios/dist';
 import { Injectable, Logger } from '@nestjs/common';
+import { Movie } from 'src/types/movie';
 
 @Injectable()
 export class AppService {
   private readonly logger = new Logger(AppService.name);
   constructor(private httpService: HttpService) {}
-  async getMovie(title: string) {
+  async getMovie(title: string): Promise<Movie> {
     try {
       let { data } = await this.httpService.axiosRef.get(
         `

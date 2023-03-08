@@ -12,12 +12,14 @@ export class AppService {
       http://www.omdbapi.com/?i=tt3896198&apikey=613ca247&t=${title}`,
       );
       // this apy key should be in a .env file, but for the purpose of the challenge, I'm leaving it here
+
+      let review = (data.imdbRating = Math.round(Number(data.imdbRating) / 2));
       let preparedData = {
         title: data.Title,
         actors: data.Actors,
         poster: data.Poster,
         plot: data.Plot,
-        rating: data.imdbRating,
+        review: review,
       };
       return preparedData;
     } catch (error) {

@@ -6,7 +6,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get('movie/:title')
-  getMovie(@Param() title): string {
-    return 'Movie data';
+  getMovie(@Param() params): string {
+    return 'Title: ' + params.title;
   }
 }

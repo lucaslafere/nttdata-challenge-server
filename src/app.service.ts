@@ -14,7 +14,7 @@ export class AppService {
       );
       // this apy key should be in a .env file, but for the purpose of the challenge, I'm leaving it here
 
-      let review = (data.imdbRating = Math.round(Number(data.imdbRating) / 2));
+      let review = (data.imdbRating = Number(data.imdbRating) / 2);
       let preparedData = {
         title: data.Title,
         actors: data.Actors,

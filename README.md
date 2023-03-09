@@ -31,11 +31,9 @@ Then, inside the cloned folder, run the following command to install the depende
 $ npm install
 ```
 
-When finished installing, start the server with one of the following commands:
+When finished installing, start the server with the following command:
 
 ```bash
-# development
-$ npm run start
 
 # watch mode
 $ npm run start:dev

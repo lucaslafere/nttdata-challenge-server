@@ -15,6 +15,21 @@ This is a quite simple API, built to take part in NTT Data's tech challenge, in 
 - TypeScript
 - NestJS
 
+## :rocket: Routes (only 1 route)
+
+```yml
+GET /movies/:title
+    - Searches for a movie on a 3rd party API, cleans up the data and sends it back to the client.
+    - headers: {}
+    - response: {
+    "title": "",
+    "actors": "",
+    "poster": "",
+    "plot": "",
+    "review": number from 0 to 5
+    }
+```
+
 ## 🏁 Running the app
 
 Make sure you've got the latest stable version of both [Node.js](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/) running locally.

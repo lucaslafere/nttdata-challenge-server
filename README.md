@@ -40,7 +40,7 @@ $ npm run start:dev
 
 ```
 
-:stop_sign: Don't forget to follow the steps mentioned above with the front-end [repository](https://github.com/lucaslafere/portfol-yourself-front.git), which contains the application's interface, so you can fully test this project.
+:stop_sign: Don't forget to follow the steps mentioned above with the front-end [repository](https://github.com/lucaslafere/nttdata-challenge-client), which contains the application's interface, so you can fully test this project.
 
 ## License
 

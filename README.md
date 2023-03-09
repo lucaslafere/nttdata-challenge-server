@@ -9,13 +9,29 @@
 
 This is a quite simple API, built to take part in NTT Data's tech challenge, in which we consume omdbapi's API to retrieve and sanitize data from movies, while sending back a DTO to our client.
 
-## Installation
+## :computer: Technologies and Concepts
+
+- Node.js
+- TypeScript
+- NestJS
+
+## 🏁 Running the app
+
+Make sure you've got the latest stable version of both [Node.js](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/) running locally.
+
+First, clone this repository in your machine:
+
+```
+git clone https://github.com/lucaslafere/nttdata-challenge-server
+```
+
+Then, inside the cloned folder, run the following command to install the dependencies:
 
 ```bash
 $ npm install
 ```
 
-## Running the app
+When finished installing, start the server with one of the following commands:
 
 ```bash
 # development
@@ -25,6 +41,8 @@ $ npm run start
 $ npm run start:dev
 
 ```
+
+:stop_sign: Don't forget to follow the steps mentioned above with the front-end [repository](https://github.com/lucaslafere/portfol-yourself-front.git), which contains the application's interface, so you can fully test this project.
 
 ## License
 
